@@ -53,3 +53,12 @@ def everyone_favourite_food(people)
   end
   return fav_foods.join(", ")
 end
+
+def no_friends(people)
+  for person in people
+    friend_length = person[:friends].length
+    if friend_length == 0
+      return person[:name]
+    end
+  end
+end
