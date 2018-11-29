@@ -45,3 +45,11 @@ def money_lending_giving(lender, lendee, amount)
     lender[:monies] -= amount
     return lender[:monies]
 end
+
+def everyone_favourite_food(people)
+  fav_foods = []
+  for person in people
+    fav_foods.push(person[:favourites][:snacks])
+  end
+  return fav_foods.join(", ")
+end
