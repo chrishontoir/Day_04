@@ -14,3 +14,8 @@ def get_food(person, food)
   end
   return false
 end
+
+def add_friend(person, friend)
+  person[:friends] << friend
+  return person[:friends].length
+end
