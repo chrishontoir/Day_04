@@ -19,3 +19,8 @@ def add_friend(person, friend)
   person[:friends] << friend
   return person[:friends].length
 end
+
+def remove_friend(person, friend)
+  person[:friends].delete(friend)
+  return person[:friends].length
+end
