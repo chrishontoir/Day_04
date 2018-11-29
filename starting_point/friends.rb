@@ -32,3 +32,16 @@ def total_monies(people)
   end
   return total_monies
 end
+
+def money_lending_recieving(lender, lendee, amount)
+    amount = lender[:monies]
+    lendee[:monies] += amount
+    return lendee[:monies]
+end
+
+def money_lending_giving(lender, lendee, amount)
+    amount = lender[:monies]
+    lendee[:monies] += amount
+    lender[:monies] -= amount
+    return lender[:monies]
+end
