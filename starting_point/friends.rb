@@ -24,3 +24,11 @@ def remove_friend(person, friend)
   person[:friends].delete(friend)
   return person[:friends].length
 end
+
+def total_monies(people)
+  total_monies = 0
+  for person in people
+    total_monies += person[:monies]
+  end
+  return total_monies
+end
